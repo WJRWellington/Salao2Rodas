@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styling/style.css">
+  <style>
+		/* This only works with JavaScript, 
+		   if it's not present, don't show loader */
+		.no-js #loader { display: none;  }
+		.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+	</style>
+	
+	<script>
+		// Wait for window load
+		$(window).load(function() {
+			// Animate loader off screen
+			$("#loader").animate({
+				top: -200
+			}, 1500);
+		});
+	</script>	
+  <link rel="stylesheet" href="">
+  <title>WellCode</title>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <img src="./assets/images/menu.png" alt="">
+      <ul>
+        <li><img src="./assets/images/car_icon.png" alt=""></li>
+        <li>Motor</li>
+        <li>Pneus</li>
+        <li>Freios</li>
+        <li>Transmissão</li>
+        <li>Resfriamento</li>
+      </ul>
+    </nav>
+    <div class="content">
+      <h1>Top Speed Brasil </h1>
+      <p>Desenvolvido por WJR</p>
+      <button> Sobre </button>
+    </div>
+    <img src="./assets/images/moto.png" class="car-image" alt="moto">
+    <div class="bottom-menu">
+      <div>
+        <img src="./assets/images/icon1.png" alt=""><p>299km</p>
+      </div>
+      <div>
+        <img src="./assets/images/icon2.png" alt=""><p>1000RR</p>
+      </div>
+      <div>
+        <img src="./assets/images/icon3.png" alt=""><p> </p>
+      </div>
+      <div>
+        <img src="./assets/images/icon4.png" alt=""><p> R$79,000</p>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

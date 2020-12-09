@@ -1,0 +1,174 @@
+
+* {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#fff, #0088a3);
+  position: relative;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  position: relative;
+}
+
+nav img {
+  width: 30px;
+  cursor: pointer
+}
+
+nav ul {
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+
+nav ul li {
+  list-style: none;
+  color: #00000f;
+  font-size: 12px;
+  margin-bottom: 15px;
+  cursor: pointer
+}
+
+nav ul::after {
+  content: '';
+  width: 1px;
+  height: 130px;
+  background:#00000f;
+  position: absolute;
+  top: 20px;
+  left: -10px;
+}
+
+.content {
+  max-width: 600px;
+  margin-top: 100px;
+}
+
+.content h1 {
+  font-size: 60px;
+}
+
+.content p {
+  max-width: 450px;
+  color: #00000f;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 40px 0;
+}
+
+.content button {
+  width: 160px;
+  padding: 10px 0; 
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 200;
+  color: rgb(0, 0, 0);
+  background: rgba(139, 26, 26, .8);
+  box-shadow: 0 5px 6px rgba(0, 0, 0, .16);
+    
+}
+
+.car-image {
+  width: 55%;
+  position: absolute;
+  right: 150px;
+  bottom: 60px;
+  animation: 
+    fadeIn 2s ease,
+    run 2s linear 1;
+  -webkit-animation: 
+    fadeIn ease 2s,
+    run 2s linear 1;
+  -moz-animation: 
+    fadeIn ease 2s,
+    run 2s linear 1;
+  -o-animation: 
+    fadeIn ease 2s,
+    run 2s linear 1;
+  -ms-animation: 
+    fadeIn ease 2s,
+    run 2s linear 1;
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@keyframes run {
+  0% {
+    transform: translate(-220px, -40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+
+.bottom-menu {
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+}
+
+.bottom-menu div {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 50px;
+}
+
+.bottom-menu img {
+  width: 25px;
+  margin-right: 15px;
+}
